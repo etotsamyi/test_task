@@ -1,0 +1,149 @@
+.table {
+    width: 80vw;
+    margin: 150px auto;
+    font-size: 17px;
+}
+
+.buttons {
+    opacity: 0;
+    justify-content: space-between;
+    width: 50px;
+    position: absolute;
+    right: -60px;
+    top: 10px;
+
+    svg {
+        cursor: pointer;
+    }
+}
+
+.table-wrapper {
+    display: flex;
+    position: relative;
+
+    &:hover > .buttons {
+        opacity: 1;
+    }
+}
+
+.table-row {
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 2px;
+    background: rgb(252, 171, 113);
+    padding: 0 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.table-fields {
+    background: rgb(113, 236, 252);
+}
+
+.table-cell {
+    display: flex;
+    justify-content: left;
+}
+
+.small {
+    min-width: 3%;
+    max-width: 3%;
+}
+
+.big {
+    min-width: 30%;
+    max-width: 30%;
+}
+
+.add-new-item {
+    outline: none !important;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 50px;
+    line-height: 40px;
+    background: #929292;
+    color: #6bcc80;
+    z-index: 1;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #6b88e7;
+    }
+}
+
+.form-overlay {
+    position: absolute;
+    background-color: white;
+    opacity: .6;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.form-wrapper {
+    padding: 50px 20px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    top: calc(50vh - 250px);
+    left: calc(50vw - 250px);
+    border-radius: 20px;
+    background: #cacaca;
+    position: absolute;
+    z-index: 3;
+    border: 2px solid rgb(192, 164, 164);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+
+        input {
+            padding: 2px 5px;
+            height: 30px;
+            font-size: 25px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .form-buttons {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                background: white;
+                height: 30px;
+                width: 40%;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                cursor: pointer;
+
+                &:hover {
+                    color: wheat;
+                    background: #6b88e7;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.drop-zone {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.drop-section {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: calc(50vh - 250px);
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        background: #e2fbff; 
+    }
+
+    p {
+        font-size: 22px;
+    }
+}
+
+.dragged {
+    border: 2px dashed #000000;
+    background: #e2fbff;
+
+    p {
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.not-dragged {
+    border: 1px solid #000000;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+}
+
+.progress {
+    background: linear-gradient(to right, rgb(173, 250, 154), seagreen);
+    transition: width 0.5s ease-in;
+}
+
+.files-counter {
+    position: absolute;
+    bottom: 50px;
+    font-size: 22px;
+}
+
+.files-rejected {
+    color: red;
+    position: absolute;
+    bottom: 20px;
+    font-size: 22px;
+}
+
+.upload-status {
+    position: absolute;
+    bottom: 102px;
+    font-size: 22px;
+    z-index: 1;
+}
+
+.select-board {
+    position: absolute;
+    background: rgb(152, 152, 190);
+    opacity: .3;
+    z-index: 100;
+    border-radius: 2px;
+    border: 1px solid;
+}

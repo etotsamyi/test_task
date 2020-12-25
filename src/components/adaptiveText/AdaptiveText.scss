@@ -1,0 +1,78 @@
+.main-text {
+    background: linear-gradient(43.72deg, #000000 -15.77%, #363636 91.4%);
+    border: 4px solid #ffc197;
+    color: white;
+    height: 50%;
+    width: 45%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    padding: 20px 21px 20px 15px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1;
+
+    .scroll {
+        height: 100%;
+        overflow-y: visible;
+        overflow-x: hidden;
+        padding: 10px 20px 0 0;
+        margin: auto;
+        
+        &::-webkit-scrollbar {
+            width: 6px;
+            background: rgba(255,255,255, 0.15);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: white;
+        }
+
+        p {
+            margin: 0 0 1em 0;
+        }
+    }
+}
+
+@media screen and (min-width: 561px) {
+    .main-text {
+        font-size: 18px;
+        line-height: 160%;
+        padding: 50px 40px 40px 30px;
+        border-radius: 60px;
+    }
+
+    .eyebrow {
+        position: absolute;
+        top: 25%;
+        width: 25%;
+        height: 60px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+        background: white;
+        z-index: 2;
+        border-bottom: 4px solid #ffc197;
+        border-left: 4px solid #ffc197;
+        border-right: 4px solid #ffc197;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .main-text {
+        font-size: 24px;
+        line-height: 165%;
+        padding: 120px 104px 40px 96px;
+    }
+
+    .eyebrow {
+        width: 30%; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .eyebrow {
+        width: 35%; 
+    }
+}

@@ -1,0 +1,42 @@
+body {
+    @font-face {
+        font-family: "Open Sans";
+        src: url("./fonts/OpenSans-Regular.ttf");
+    }
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    min-height: 40px;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+
+    a{
+        color: white;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 165%;
+
+        &:hover {
+            color: blue;
+        }
+    }
+}
